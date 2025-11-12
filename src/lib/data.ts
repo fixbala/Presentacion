@@ -1,4 +1,4 @@
-import type { Project, Skill, Certification } from './types';
+import type { Project, Skill, Certification, Experience } from './types';
 import { Database, FileCode, Server, BotMessageSquare, Link as LinkIcon, Github, Linkedin, Mail, GraduationCap } from 'lucide-react';
 import { ReactIcon, ReduxIcon, WhatsappIcon } from '@/components/icons';
 import { placeholderImages } from './placeholder-images.json';
@@ -28,15 +28,29 @@ export const about = {
   title: 'Desarrollador de Software',
   introduction: "Hola, Soy Santiago",
   description: `Soy un desarrollador de Software de 25 años, con solidos conocimientos en el desarrollo de aplicaciones web, he trabajado con tecnologias como React, Redux, Node.js, Express, PostgreSQL, Sequelize.
-  Soy una persona proactiva, organizado y responsable, con buenas relaciones interpersonales. Siempre tengo la mejor disposición para la realización de mis labores.`,
-  experience: {
-    title: "Experiencia Profesional",
-    company: "No Country",
-    role: "FullStack Developer",
-    period: "Noviembre 2023 - Diciembre 2023",
-    description: "Participe en la simulación de un proyecto de una aplicación web de un e-commerce donde teniamos que hacerla en un periodo de 3 semanas, en donde desarrolle la parte del Back-end, el Login, la base de datos, los modelos y controladores de los mismos."
-  }
+  Soy una persona proactiva, organizado y responsable, con buenas relaciones interpersonales. Siempre tengo la mejor disposición para la realización de mis labores.`
 };
+
+export const experiences: Experience[] = [
+    {
+        company: 'CultivarTech',
+        role: 'Desarrollador Backend',
+        period: 'Enero 2023 - Abril 2024',
+        description: 'Desarrollé y optimicé la estructura del backend. Levanté y documenté requerimientos funcionales, asegurando el cumplimiento de los objetivos del proyecto. Implementé microservicios escalables. Desarrollo de estructura frontend con angular.'
+    },
+    {
+        company: 'No Country',
+        role: 'FullStack Developer',
+        period: 'Noviembre 2023 - Diciembre 2023',
+        description: 'Participe en la simulación de un proyecto de una aplicación web de un e-commerce donde teniamos que hacerla en un periodo de 3 semanas, en donde desarrolle la parte del Back-end, el Login, la base de datos, los modelos y controladores de los mismos.'
+    },
+    {
+        company: 'Makaia',
+        role: 'Desarrollador Web Trainee',
+        period: 'Junio 2022 - Noviembre 2022',
+        description: 'Participé en un bootcamp intensivo donde desarrollé habilidades en el stack PERN (PostgreSQL, Express, React, Node.js). Creé proyectos prácticos, incluyendo una SPA de videojuegos y una aplicación de recetas de comida, aplicando conocimientos en frontend y backend.'
+    }
+];
 
 export const skills: Skill[] = [
   { name: 'HTML', icon: FileCode },
