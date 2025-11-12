@@ -160,6 +160,7 @@ export const projects: Project[] = [
 
 export const navigation = [
     { name: 'Sobre mi', href: '#about' },
+    { name: 'Experiencia', href: '#experience' },
     { name: 'Habilidades', href: '#skills' },
     { name: 'Proyectos', href: '#projects' },
     { name: 'Certificaciones', href: '#certifications' },

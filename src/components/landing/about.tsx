@@ -2,15 +2,14 @@ import Image from 'next/image';
 import { about } from '@/lib/data';
 import { placeholderImages } from '@/lib/placeholder-images.json';
 import { Briefcase } from 'lucide-react';
-import { ExperienceTimeline } from './experience-timeline';
 
 export function About() {
   const profileImage = placeholderImages.find(p => p.id === 'profile-picture');
 
   return (
-    <section id="about" className="bg-secondary py-20 sm:py-32">
+    <section id="about" className="py-20 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-5 gap-12 items-start">
+        <div className="grid md:grid-cols-5 gap-12 items-center">
           <div className="md:col-span-2">
             <div className="relative aspect-square w-full max-w-sm mx-auto">
               {profileImage && (
@@ -35,10 +34,6 @@ export function About() {
             <p className="mt-4 text-lg text-foreground/80">
               {about.description}
             </p>
-            <div className="mt-8">
-                <h3 className="font-headline text-2xl font-bold text-primary mb-6">Experiencia Profesional</h3>
-                <ExperienceTimeline />
-            </div>
           </div>
         </div>
       </div>

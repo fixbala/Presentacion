@@ -8,6 +8,7 @@ import { Header } from '@/components/layout/header';
 import { Recommendation } from '@/components/landing/recommendation';
 import { Toaster } from '@/components/ui/toaster';
 import { Certifications } from '@/components/landing/certifications';
+import { Experience } from '@/components/landing/experience';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Certifications />
