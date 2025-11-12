@@ -17,7 +17,7 @@ export function ProjectCard({ project, highlighted = false, reason }: ProjectCar
   const { t } = useTranslation();
 
   return (
-    <Card className={`flex flex-col h-full transition-all duration-300 ${highlighted ? 'border-accent shadow-lg ring-2 ring-accent' : 'hover:shadow-xl hover:-translate-y-1'}`}>
+    <Card className={`flex flex-col h-full transition-all duration-300 group glow-on-hover-accent ${highlighted ? 'border-accent shadow-lg ring-2 ring-accent' : 'hover:-translate-y-1'}`}>
       {reason && (
         <div className="p-3 bg-accent/10 text-accent-foreground text-sm border-b border-accent/20">
             <p className='text-accent'>{reason}</p>
