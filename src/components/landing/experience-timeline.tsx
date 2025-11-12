@@ -14,7 +14,7 @@ export function ExperienceTimeline() {
                         <Briefcase className="h-5 w-5 text-primary" />
                     </div>
                     <div className="flex-1">
-                        <Card className="transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <Card className="transform transition-transform duration-300 hover:-translate-y-1 glow-on-hover-accent">
                             <CardHeader>
                                 <div className="flex flex-col sm:flex-row justify-between sm:items-center">
                                     <CardTitle className="font-headline text-lg text-primary">{exp.role}</CardTitle>
