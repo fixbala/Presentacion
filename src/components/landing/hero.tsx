@@ -32,11 +32,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div aria-hidden="true" className="absolute inset-0 z-0">
-         <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-secondary to-transparent"></div>
-         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/5 rounded-full filter blur-3xl animate-[spin_20s_linear_infinite]"></div>
-         <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-accent/5 rounded-full filter blur-3xl animate-[spin_25s_linear_infinite_reverse]"></div>
-      </div>
     </section>
   );
 }
