@@ -29,8 +29,7 @@ export const about = {
   name: 'Santiago Martínez Ayala',
   title: 'Desarrollador de Software',
   introduction: "Hola, Soy Santiago",
-  description: `Soy un desarrollador de Software de 25 años, con solidos conocimientos en el desarrollo de aplicaciones web, he trabajado con tecnologias como React, Redux, Node.js, Express, PostgreSQL, Sequelize.
-  Soy una persona proactiva, organizado y responsable, con buenas relaciones interpersonales. Siempre tengo la mejor disposición para la realización de mis labores.`
+  description: `Ingeniero de Sistemas y Computación con sólida experiencia en desarrollo backend y frontend, especializado en la creación de soluciones escalables, eficientes y seguras. Experto en el diseño e implementación de microservicios, APIs RESTful y sistemas distribuidos utilizando tecnologías como Java, Go, Spring Boot, Python, SQL y Angular. Apasionado por la tecnología, me mantengo actualizado en las últimas tendencias de desarrollo de software, incluyendo frameworks modernos de frontend y prácticas de programación de alto rendimiento. Mi enfoque está en garantizar la calidad, la robustez y la fiabilidad en cada solución desarrollada, siempre alineado con los objetivos estratégicos de la organización.`
 };
 
 export const experiences: Experience[] = [
