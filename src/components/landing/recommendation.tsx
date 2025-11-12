@@ -1,6 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { BotMessageSquare, Sparkles } from 'lucide-react';
 import { getProjectRecommendations } from '@/app/actions';
 import { Button } from '@/components/ui/button';
@@ -27,7 +28,7 @@ function SubmitButton() {
 }
 
 export function Recommendation() {
-  const [state, formAction] = useFormState(getProjectRecommendations, initialState);
+  const [state, formAction] = useActionState(getProjectRecommendations, initialState);
   const [recommendedProjects, setRecommendedProjects] = useState<Project[]>([]);
   const formRef = useRef<HTMLFormElement>(null);
   
