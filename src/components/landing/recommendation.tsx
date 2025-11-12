@@ -2,18 +2,17 @@
 
 import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
-import { BotMessageSquare, Sparkles } from 'lucide-react';
-import { getProjectRecommendations } from '@/app/actions';
+import { BotMessageSquare, Sparkles, Lightbulb, Users, Wrench, GitMerge } from 'lucide-react';
+import { getProjectStructure, type ProjectStructureState } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { useEffect, useRef, useState } from 'react';
-import { ProjectCard } from './project-card';
-import type { Project } from '@/lib/types';
-import { Card, CardContent } from '../ui/card';
+import { useRef } from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Badge } from '../ui/badge';
 import { useTranslation } from '@/context/language-context';
 
-const initialState = {
+const initialState: ProjectStructureState = {
   message: '',
 };
 
@@ -22,29 +21,16 @@ function SubmitButton() {
   const { t } = useTranslation();
   return (
     <Button type="submit" disabled={pending} className="w-full sm:w-auto">
-      {pending ? t('recommendation.button_pending') : t('recommendation.button_cta')}
+      {pending ? t('architect.button_pending') : t('architect.button_cta')}
       <Sparkles className="ml-2 h-5 w-5" />
     </Button>
   );
 }
 
 export function Recommendation() {
-  const [state, formAction] = useActionState(getProjectRecommendations, initialState);
-  const [recommendedProjects, setRecommendedProjects] = useState<Project[]>([]);
+  const [state, formAction] = useActionState(getProjectStructure, initialState);
   const formRef = useRef<HTMLFormElement>(null);
   const { t, language } = useTranslation();
-
-  const projects: Project[] = t('projects.items', { returnObjects: true });
-  
-  useEffect(() => {
-    if (state.recommendations) {
-      const recommended = state.recommendations.map(rec => {
-        const project = projects.find(p => p.id === rec.id);
-        return { ...project, reason: rec.reason };
-      }).filter(Boolean) as (Project & { reason: string })[];
-      setRecommendedProjects(recommended);
-    }
-  }, [state.recommendations, projects]);
 
   return (
     <section id="recommendation" className="py-20 sm:py-32">
@@ -52,10 +38,10 @@ export function Recommendation() {
         <div className="text-center">
           <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary flex items-center justify-center gap-3 text-glow-primary">
             <BotMessageSquare className="w-10 h-10 text-accent icon-glow" />
-            {t('recommendation.title_section')}
+            {t('architect.title_section')}
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-            {t('recommendation.description')}
+            {t('architect.description')}
           </p>
         </div>
 
@@ -64,16 +50,16 @@ export function Recommendation() {
             <form ref={formRef} action={formAction} className="space-y-4">
               <input type="hidden" name="language" value={language} />
               <div>
-                <Label htmlFor="objective" className="text-lg font-medium">{t('recommendation.form_label')}</Label>
+                <Label htmlFor="projectDescription" className="text-lg font-medium">{t('architect.form_label')}</Label>
                 <Textarea
-                  id="objective"
-                  name="objective"
-                  placeholder={t('recommendation.form_placeholder')}
+                  id="projectDescription"
+                  name="projectDescription"
+                  placeholder={t('architect.form_placeholder')}
                   className="mt-2 min-h-[100px]"
                   required
                 />
-                {state?.errors?.objective && (
-                  <p className="mt-1 text-sm text-destructive">{state.errors.objective[0]}</p>
+                {state?.errors?.projectDescription && (
+                  <p className="mt-1 text-sm text-destructive">{state.errors.projectDescription[0]}</p>
                 )}
               </div>
               <div className="flex justify-end">
@@ -83,22 +69,74 @@ export function Recommendation() {
           </CardContent>
         </Card>
         
-        {state.message && state.message !== 'Success' && (
+        {state?.message && state.message !== 'Success' && (
           <p className="mt-4 text-center text-destructive">{state.message}</p>
         )}
         
-        {recommendedProjects.length > 0 && (
-          <div className="mt-16">
-            <h3 className="font-headline text-2xl sm:text-3xl font-bold text-primary text-center text-glow-primary">{t('recommendation.results_title')}</h3>
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {recommendedProjects.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  project={project}
-                  highlighted={true}
-                  reason={(project as any).reason}
-                />
-              ))}
+        {state?.projectPlan && (
+          <div className="mt-16 max-w-4xl mx-auto">
+            <h3 className="font-headline text-2xl sm:text-3xl font-bold text-primary text-center text-glow-primary">{state.projectPlan.projectName}</h3>
+            <p className="mt-2 text-center text-lg text-muted-foreground">{state.projectPlan.projectSummary}</p>
+
+            <div className="mt-8 space-y-8">
+              {/* Technologies */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2"><Wrench className="text-accent"/> {t('architect.results_technologies')}</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold">Frontend</h4>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {state.projectPlan.technologies.frontend.map(tech => <Badge key={tech} variant="secondary">{tech}</Badge>)}
+                    </div>
+                  </div>
+                   <div>
+                    <h4 className="font-semibold">Backend</h4>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {state.projectPlan.technologies.backend.map(tech => <Badge key={tech} variant="secondary">{tech}</Badge>)}
+                    </div>
+                  </div>
+                   <div>
+                    <h4 className="font-semibold">{t('architect.results_database')}</h4>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {state.projectPlan.technologies.database.map(tech => <Badge key={tech} variant="secondary">{tech}</Badge>)}
+                    </div>
+                  </div>
+                   <div>
+                    <h4 className="font-semibold">DevOps</h4>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {state.projectPlan.technologies.devops.map(tech => <Badge key={tech} variant="secondary">{tech}</Badge>)}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Methodology */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2"><GitMerge className="text-accent"/> {t('architect.results_methodology')}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <h4 className="font-semibold text-primary">{state.projectPlan.methodology.name}</h4>
+                  <p className="mt-1 text-muted-foreground">{state.projectPlan.methodology.description}</p>
+                </CardContent>
+              </Card>
+              
+              {/* Team */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2"><Users className="text-accent"/> {t('architect.results_team')}</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {state.projectPlan.team.map(member => (
+                    <div key={member.role}>
+                      <h4 className="font-semibold text-primary">{member.role}</h4>
+                      <p className="mt-1 text-muted-foreground">{member.responsibilities}</p>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
             </div>
           </div>
         )}

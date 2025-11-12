@@ -86,7 +86,7 @@
         "longDescription": "Creación de una plataforma de e-commerce multi-vendedor con pasarela de pagos integrada, optimizada para un alto rendimiento y seguridad.",
         "technologies": ["Angular", "Spring Boot", "MySQL", "Stripe"],
         "link": "https://github.com/santiagomartinez12",
-        "image": { "src": "https://images.unsplash.com/photo-1674027392887-751d6396b710?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzdG9yZXxlbnwwfHx8fDE3NjI5MzkyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Plataforma de E-commerce con Múltiples Vendedores", "hint": "online store" }
+        "image": { "src": "https://images.unsplash.com/photo-1674027392887-751d6396b710?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzdG9yZXxlbnwwfHx8fDE3NjI5MzkyOTN8MA&ixlib.rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Plataforma de E-commerce con Múltiples Vendedores", "hint": "online store" }
       },
       {
         "id": "p3",
@@ -95,7 +95,7 @@
         "longDescription": "Implementación de bots para automatizar tareas de back-office, reduciendo el tiempo de procesamiento en un 75% y minimizando errores humanos.",
         "technologies": ["Python", "RPA", "AWS Lambda"],
         "link": "https://github.com/santiagomartinez12",
-        "image": { "src": "https://images.unsplash.com/photo-1736488679013-38f65b0ae82c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9jZXNzJTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3NjI5NjIyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Automatización de Procesos de Back-Office", "hint": "process automation" }
+        "image": { "src": "https://images.unsplash.com/photo-1736488679013-38f65b0ae82c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9jZXNzJTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3NjI5NjIyOTR8MA&ixlib.rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Automatización de Procesos de Back-Office", "hint": "process automation" }
       },
       {
         "id": "p4",
@@ -104,7 +104,7 @@
         "longDescription": "Este proyecto consistió en el desarrollo de un dashboard interactivo que permite la visualización y monitoreo de flujos de datos en tiempo real. Utilizando WebSockets para una comunicación bidireccional eficiente, la aplicación está respaldada por una infraestructura robusta con Spring Boot y Kafka, lo que garantiza un procesamiento de eventos de alto rendimiento y baja latencia. La interfaz, desarrollada en Angular, ofrece una experiencia de usuario fluida y responsiva.",
         "technologies": ["Angular", "Spring Boot", "WebSocket", "Kafka"],
         "link": "https://github.com/santiagomartinez12",
-        "image": { "src": "https://images.unsplash.com/photo-1625535069654-cfeb8f829088?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGF0YSUyMGNvZGV8ZW58MHx8fHwxNzYyOTE4NjUzfDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Dashboard de Análisis de Datos en Tiempo Real", "hint": "data code" }
+        "image": { "src": "https://images.unsplash.com/photo-1625535069654-cfeb8f829088?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGF0YSUyMGNvZGV8ZW58MHx8fHwxNzYyOTE4NjUzfDA&ixlib.rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Dashboard de Análisis de Datos en Tiempo Real", "hint": "data code" }
       },
       {
         "id": "p5",
@@ -113,7 +113,7 @@
         "longDescription": "Implementación de un sistema de seguridad completo para una aplicación empresarial. Se utilizó Spring Security para gestionar la autenticación y autorización basada en roles, protegiendo los recursos de la aplicación de accesos no autorizados. La solución integra estándares como OAuth 2.0 y JSON Web Tokens (JWT) para asegurar las comunicaciones y el acceso a las APIs.",
         "technologies": ["Spring Security", "OAuth 2.0", "JWT", "PostgreSQL"],
         "link": "https://github.com/santiagomartinez12",
-        "image": { "src": "https://images.unsplash.com/photo-1639503547276-90230c4a4198?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzZWN1cml0eSUyMGxvZ2lufGVufDB8fHx8MTc2MjkxMTY3NHww&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Sistema de Autenticación y Autorización", "hint": "security login" }
+        "image": { "src": "https://images.unsplash.com/photo-1639503547276-90230c4a4198?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzZWN1cml0eSUyMGxvZ2lufGVufDB8fHx8MTc2MjkxMTY3NHww&ixlib.rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Sistema de Autenticación y Autorización", "hint": "security login" }
       },
       {
         "id": "p6",
@@ -122,7 +122,7 @@
         "longDescription": "Desarrollo de un API Gateway que actúa como punto de entrada único para una arquitectura de microservicios. Este componente centraliza el enrutamiento de solicitudes, la autenticación y el monitoreo de los diferentes servicios, simplificando la comunicación y mejorando la seguridad y escalabilidad del sistema. Se implementó utilizando Spring Cloud Gateway y se integró con Netflix Eureka para el descubrimiento de servicios.",
         "technologies": ["Spring Cloud Gateway", "Netflix Eureka", "Docker"],
         "link": "https://github.com/santiagomartinez12",
-        "image": { "src": "https://images.unsplash.com/photo-1628573413574-2b35620de9d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbG91ZCUyMG5ldHdvcmt8ZW58MHx8fHwxNzYyOTM0MzA5fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "API Gateway para Arquitectura de Microservicios", "hint": "cloud network" }
+        "image": { "src": "https://images.unsplash.com/photo-1628573413574-2b35620de9d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbG91ZCUyMG5ldHdvcmt8ZW58MHx8fHwxNzYyOTM0MzA5fDA&ixlib.rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "API Gateway para Arquitectura de Microservicios", "hint": "cloud network" }
       }
     ]
   },
@@ -132,7 +132,7 @@
     { "name": "Habilidades", "href": "#skills" },
     { "name": "Proyectos", "href": "#projects" },
     { "name": "Certificaciones", "href": "#certifications" },
-    { "name": "Recomendador AI", "href": "#recommendation" },
+    { "name": "Arquitecto IA", "href": "#recommendation" },
     { "name": "Contacto", "href": "#contact" }
   ],
   "contact": {
@@ -152,13 +152,17 @@
   "experience": {
     "title_section": "Experiencia Profesional"
   },
-  "recommendation": {
-    "title_section": "Recomendador de Proyectos con IA",
-    "description": "¿No estás seguro de qué proyecto ver? Describe lo que buscas (por ejemplo, 'un proyecto con un backend robusto' o 'una app con una gran UI') y la IA te sugerirá los más relevantes.",
-    "form_label": "Tu objetivo",
-    "form_placeholder": "Ej: Busco un desarrollador con experiencia en React y manejo de APIs externas...",
-    "button_cta": "Obtener Recomendación",
-    "button_pending": "Analizando...",
-    "results_title": "Proyectos Recomendados para ti"
+  "architect": {
+    "title_section": "Arquitecto de Proyectos con IA",
+    "description": "¿Tienes una idea para una app? Descríbela a continuación y deja que la IA construya un plan técnico completo para ti, incluyendo tecnologías, metodología y el equipo que necesitarás.",
+    "form_label": "Describe tu idea de proyecto",
+    "form_placeholder": "Ej: Una app móvil para seguir gastos personales con categorías de presupuesto e informes mensuales...",
+    "button_cta": "Generar Plan",
+    "button_pending": "Generando...",
+    "results_title": "Plan de Proyecto Generado",
+    "results_technologies": "Tecnologías Recomendadas",
+    "results_database": "Base de Datos",
+    "results_methodology": "Metodología de Desarrollo",
+    "results_team": "Equipo Recomendado"
   }
 }

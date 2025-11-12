@@ -132,7 +132,7 @@
     { "name": "Skills", "href": "#skills" },
     { "name": "Projects", "href": "#projects" },
     { "name": "Certifications", "href": "#certifications" },
-    { "name": "AI Recommender", "href": "#recommendation" },
+    { "name": "AI Architect", "href": "#recommendation" },
     { "name": "Contact", "href": "#contact" }
   ],
   "contact": {
@@ -152,13 +152,17 @@
   "experience": {
     "title_section": "Professional Experience"
   },
-  "recommendation": {
-    "title_section": "AI Project Recommender",
-    "description": "Not sure which project to check out? Describe what you're looking for (e.g., 'a project with a robust backend' or 'an app with a great UI') and the AI will suggest the most relevant ones.",
-    "form_label": "Your objective",
-    "form_placeholder": "e.g., I'm looking for a developer with experience in React and handling external APIs...",
-    "button_cta": "Get Recommendation",
-    "button_pending": "Analyzing...",
-    "results_title": "Recommended Projects for You"
+  "architect": {
+    "title_section": "AI Project Architect",
+    "description": "Have an idea for an app? Describe it below and let the AI build a complete technical plan for you, including technologies, methodology, and the team you'll need.",
+    "form_label": "Describe your project idea",
+    "form_placeholder": "e.g., A mobile app for tracking personal expenses with budget categories and monthly reports...",
+    "button_cta": "Generate Plan",
+    "button_pending": "Generating...",
+    "results_title": "Generated Project Plan",
+    "results_technologies": "Recommended Technologies",
+    "results_database": "Database",
+    "results_methodology": "Development Methodology",
+    "results_team": "Recommended Team"
   }
 }

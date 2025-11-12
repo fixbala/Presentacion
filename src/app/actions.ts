@@ -1,32 +1,49 @@
 'use server';
 import { run } from 'genkit';
-import { recommendProjectsFlow } from '@/ai/flows/recommendProjects';
+import { structureProjectFlow } from '@/ai/flows/structureProject';
 import { z } from 'zod';
 import { translations } from '@/lib/locales';
 
-// AI Recommendation Action
-const recommendationSchema = z.object({
-  objective: z.string().min(10, "Por favor, describe lo que buscas con más detalle."),
+// AI Project Structuring Action
+const structureProjectSchema = z.object({
+  projectDescription: z.string().min(10, "Por favor, describe tu idea de proyecto con más detalle."),
   language: z.string().optional(),
 });
 
-type RecommendationState = {
+export type ProjectStructureState = {
   message?: string;
   errors?: {
-    objective?: string[];
+    projectDescription?: string[];
   };
-  recommendations?: { id: string; reason: string }[];
+  projectPlan?: {
+    projectName: string;
+    projectSummary: string;
+    technologies: {
+      frontend: string[];
+      backend: string[];
+      database: string[];
+      devops: string[];
+    };
+    methodology: {
+      name: string;
+      description: string;
+    };
+    team: {
+      role: string;
+      responsibilities: string;
+    }[];
+  };
 };
 
-export async function getProjectRecommendations(
-  prevState: RecommendationState,
+export async function getProjectStructure(
+  prevState: ProjectStructureState,
   formData: FormData
-): Promise<RecommendationState> {
+): Promise<ProjectStructureState> {
 
   const lang = formData.get('language') === 'en' ? 'en' : 'es';
 
-  const validatedFields = recommendationSchema.safeParse({
-    objective: formData.get('objective'),
+  const validatedFields = structureProjectSchema.safeParse({
+    projectDescription: formData.get('projectDescription'),
     language: lang,
   });
 
@@ -37,29 +54,20 @@ export async function getProjectRecommendations(
     };
   }
 
-  const projects = translations[lang].projects.items;
-
   try {
-    const result = await run(recommendProjectsFlow, {
-      objective: validatedFields.data.objective,
-      projects: projects.map(({ id, title, description, longDescription, technologies }: any) => ({
-        id,
-        title,
-        description,
-        longDescription,
-        technologies,
-      })),
+    const result = await run(structureProjectFlow, {
+      projectDescription: validatedFields.data.projectDescription,
       language: lang,
     });
 
     return {
       message: 'Success',
-      recommendations: result.recommendations,
+      projectPlan: result,
     };
   } catch (error) {
     console.error(error);
     return {
-      message: 'Ocurrió un error al generar las recomendaciones. Por favor, inténtalo de nuevo.',
+      message: 'Ocurrió un error al generar la estructura del proyecto. Por favor, inténtalo de nuevo.',
     };
   }
 }

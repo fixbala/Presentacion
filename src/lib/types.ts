@@ -34,3 +34,22 @@ export type Experience = {
 export type Translation = {
   [key: string]: any;
 };
+
+export type ProjectPlan = {
+  projectName: string;
+  projectSummary: string;
+  technologies: {
+    frontend: string[];
+    backend: string[];
+    database: string[];
+    devops: string[];
+  };
+  methodology: {
+    name: string;
+    description: string;
+  };
+  team: {
+    role: string;
+    responsibilities: string;
+  }[];
+};
