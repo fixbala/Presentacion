@@ -1,7 +1,9 @@
 import type { Project, Skill, Certification, Experience } from './types';
 import { Database, FileCode, Server, BotMessageSquare, Link as LinkIcon, Github, Linkedin, Mail, GraduationCap } from 'lucide-react';
 import { ReactIcon, ReduxIcon, WhatsappIcon } from '@/components/icons';
-import { placeholderImages } from './placeholder-images.json';
+import { placeholderImages as allPlaceholderImages } from './placeholder-images.json';
+
+const placeholderImages = allPlaceholderImages;
 
 const getImage = (id: string) => {
     const image = placeholderImages.find((img) => img.id === id);
