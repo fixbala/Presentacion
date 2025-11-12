@@ -11,7 +11,7 @@
     {
       "id": "project-dashboard",
       "description": "Placeholder for the Real-Time Data Analysis Dashboard project.",
-      "imageUrl": "https://images.unsplash.com/photo-1707758967860-19106a5e9ab7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhJTIwY29kZXxlbnwwfHx8fDE3NjI5MTg2NTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1625535069654-cfeb8f829088?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGF0YSUyMGNvZGV8ZW58MHx8fHwxNzYyOTE4NjUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "width": 600,
       "height": 400,
       "imageHint": "data code"
@@ -19,7 +19,7 @@
     {
       "id": "project-auth",
       "description": "Placeholder for the Authentication and Authorization System project.",
-      "imageUrl": "https://images.unsplash.com/photo-1762330469042-dfe6887387dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzZWN1cml0eSUyMGxvZ2lufGVufDB8fHx8MTc2MjkxMTY3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639503547276-90230c4a4198?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzZWN1cml0eSUyMGxvZ2lufGVufDB8fHx8MTc2MjkxMTY3NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "width": 600,
       "height": 400,
       "imageHint": "security login"
@@ -27,7 +27,7 @@
     {
       "id": "project-gateway",
       "description": "Placeholder for the API Gateway for Microservices project.",
-      "imageUrl": "https://images.unsplash.com/photo-1633511874919-41a4a1599a06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbG91ZCUyMG5ldHdvcmt8ZW58MHx8fHwxNzYzOTExMzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628573413574-2b35620de9d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbG91ZCUyMG5ldHdvcmt8ZW58MHx8fHwxNzYyOTM0MzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "width": 600,
       "height": 400,
       "imageHint": "cloud network"
@@ -35,7 +35,7 @@
     {
       "id": "project-chatbot",
       "description": "Placeholder for the Customer Support Chatbot project.",
-      "imageUrl": "https://images.unsplash.com/photo-1589254065909-b7086229d092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2JvdCUyMGNoYXR8ZW58MHx8fHwxNzYzOTExMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1620429948700-24e48a41d5aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb2JvdCUyMGNoYXR8ZW58MHx8fHwxNzYyOTYxNTMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "width": 600,
       "height": 400,
       "imageHint": "robot chat"
@@ -43,7 +43,7 @@
     {
       "id": "project-ecommerce",
       "description": "Placeholder for the Multi-Vendor E-commerce Platform project.",
-      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1674027392887-751d6396b710?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzdG9yZXxlbnwwfHx8fDE3NjI5MzkyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "width": 600,
       "height": 400,
       "imageHint": "online store"
@@ -51,7 +51,7 @@
     {
       "id": "project-automation",
       "description": "Placeholder for the Back-Office Process Automation project.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1736488679013-38f65b0ae82c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9jZXNzJTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3NjI5NjIyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "width": 600,
       "height": 400,
       "imageHint": "process automation"
