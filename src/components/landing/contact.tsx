@@ -9,6 +9,7 @@ export function Contact() {
   const email = socialLinks.find(link => link.name === 'Email');
   const github = socialLinks.find(link => link.name === 'GitHub');
   const linkedin = socialLinks.find(link => link.name === 'LinkedIn');
+  const whatsapp = socialLinks.find(link => link.name === 'WhatsApp');
 
   return (
     <section id="contact" className="bg-secondary py-20 sm:py-32">
@@ -32,10 +33,12 @@ export function Contact() {
                   </span>
                 </a>
               )}
-              <a href="https://wa.me/573043990600" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 p-3 rounded-lg transition-colors hover:bg-primary/5">
-                <WhatsappIcon className="w-6 h-6 text-accent transition-transform group-hover:scale-110" />
-                <span className="text-lg text-foreground/90 group-hover:text-primary group-hover:font-medium">(+57) 3043990600</span>
-              </a>
+              {whatsapp && (
+                <a href={whatsapp.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 p-3 rounded-lg transition-colors hover:bg-primary/5">
+                  <WhatsappIcon className="w-6 h-6 text-accent transition-transform group-hover:scale-110" />
+                  <span className="text-lg text-foreground/90 group-hover:text-primary group-hover:font-medium">(+57) 3043990600</span>
+                </a>
+              )}
               
               <div className="flex justify-center gap-4 pt-4 border-t border-border">
                 {github && (
@@ -58,6 +61,13 @@ export function Contact() {
                       <Mail className="h-5 w-5 text-foreground/80 group-hover:text-accent" />
                     </a>
                   </Button>
+                )}
+                {whatsapp && (
+                    <Button variant="outline" size="icon" asChild className="transform transition-transform hover:scale-110 hover:bg-accent/10">
+                        <a href={whatsapp.href} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <WhatsappIcon className="h-5 w-5 text-foreground/80 group-hover:text-accent" />
+                        </a>
+                    </Button>
                 )}
               </div>
 
