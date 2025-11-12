@@ -32,7 +32,7 @@ export function Header() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="text-2xl font-headline font-bold text-primary hover:text-accent transition-colors text-glow-primary">
+          <Link href="/" className="text-xl font-headline font-bold text-primary hover:text-accent transition-colors text-glow-primary">
             {t('about.name')}
           </Link>
 
