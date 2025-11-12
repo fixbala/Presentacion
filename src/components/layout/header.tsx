@@ -33,14 +33,14 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-1 md:flex-none">
-            <Link href="/" className="text-2xl font-headline font-bold text-primary hover:text-accent transition-colors text-glow-primary">
+            <Link href="/" className="text-2xl font-headline font-bold text-primary hover:text-accent transition-colors text-glow-primary glow-on-hover-accent rounded-md p-2">
               SMA
             </Link>
           </div>
 
           <nav className="hidden md:flex items-center space-x-1">
             {t('navigation', { returnObjects: true }).map((item: {name: string, href: string}) => (
-              <Button variant="ghost" asChild key={item.name}>
+              <Button variant="ghost" asChild key={item.name} className="glow-on-hover-accent">
                 <a
                   href={item.href}
                   className="font-medium text-foreground/80 hover:text-accent transition-colors"
@@ -49,8 +49,12 @@ export function Header() {
                 </a>
               </Button>
             ))}
-            <ThemeToggle />
-            <LanguageToggle />
+            <div className="glow-on-hover-accent rounded-md">
+              <ThemeToggle />
+            </div>
+            <div className="glow-on-hover-accent rounded-md">
+              <LanguageToggle />
+            </div>
           </nav>
 
           <div className="flex items-center gap-2 md:hidden">
