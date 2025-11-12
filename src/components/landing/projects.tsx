@@ -1,3 +1,7 @@
+'use client';
+
+import * as React from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 import { projects } from '@/lib/data';
 import { ProjectCard } from './project-card';
 import {
@@ -9,6 +13,10 @@ import {
 } from '@/components/ui/carousel';
 
 export function Projects() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: true })
+  );
+
   return (
     <section id="projects" className="bg-secondary py-20 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,10 +30,13 @@ export function Projects() {
         </div>
         <div className="mt-12">
           <Carousel
+            plugins={[plugin.current]}
             opts={{
               align: 'start',
               loop: true,
             }}
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
             className="w-full"
           >
             <CarouselContent>
