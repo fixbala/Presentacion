@@ -1,5 +1,11 @@
-import { skills } from '@/lib/data';
-import { Card, CardContent } from '@/components/ui/card';
+import { skillsByCategory } from '@/lib/data';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
+import { Badge } from '@/components/ui/badge';
 
 export function Skills() {
   return (
@@ -10,23 +16,31 @@ export function Skills() {
             Habilidades y Tecnologías
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-            Estas son algunas de las tecnologías con las que he trabajado en mis proyectos.
+            Mi conjunto de herramientas técnicas para construir soluciones robustas y escalables.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
-          {skills.map((skill) => (
-            <Card
-              key={skill.name}
-              className="group transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
-              <CardContent className="flex flex-col items-center justify-center p-6 aspect-square">
-                <skill.icon className="h-10 w-10 md:h-12 md:w-12 text-primary transition-colors duration-300 group-hover:text-accent" />
-                <p className="mt-4 text-sm md:text-base font-medium text-center text-foreground group-hover:text-primary">
-                  {skill.name}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mt-12 max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="w-full" defaultValue="item-0">
+            {skillsByCategory.map((category, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-xl font-headline text-primary hover:text-accent transition-colors data-[state=open]:text-accent">
+                  <div className="flex items-center gap-4">
+                    <category.icon className="h-6 w-6" />
+                    <span>{category.title}</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="flex flex-wrap gap-3 pt-4">
+                    {category.technologies.map((tech) => (
+                      <Badge key={tech} variant="secondary" className="text-base px-4 py-2 transition-transform hover:scale-105">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

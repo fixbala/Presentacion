@@ -1,5 +1,5 @@
 import type { Project, Skill, Certification, Experience } from './types';
-import { Database, FileCode, Server, BotMessageSquare, Link as LinkIcon, Github, Linkedin, Mail, GraduationCap } from 'lucide-react';
+import { Database, FileCode, Server, BotMessageSquare, Link as LinkIcon, Github, Linkedin, Mail, GraduationCap, Monitor, Cloud } from 'lucide-react';
 import { ReactIcon, ReduxIcon, WhatsappIcon } from '@/components/icons';
 import { placeholderImages as allPlaceholderImages } from './placeholder-images.json';
 
@@ -52,6 +52,29 @@ export const experiences: Experience[] = [
         period: 'Enero 2023 - Abril 2024',
         description: 'Desarrollé y optimicé la estructura del backend, levanté y documenté requerimientos funcionales, asegurando el cumplimiento de los objetivos del proyecto. Implementé microservicios escalables y desarrollé la estructura del frontend con Angular.'
     }
+];
+
+export const skillsByCategory = [
+  {
+    title: 'Backend',
+    icon: Server,
+    technologies: ['Java', 'Spring Boot', 'Python', 'Go', 'Node.js', 'Microservicios', 'RESTful APIs'],
+  },
+  {
+    title: 'Frontend',
+    icon: Monitor,
+    technologies: ['Angular', 'HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
+  },
+  {
+    title: 'Bases de Datos',
+    icon: Database,
+    technologies: ['MySQL', 'PostgreSQL', 'MongoDB', 'SQL Server'],
+  },
+  {
+    title: 'Cloud & DevOps',
+    icon: Cloud,
+    technologies: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'Jenkins'],
+  },
 ];
 
 export const skills: Skill[] = [
