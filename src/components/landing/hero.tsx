@@ -13,7 +13,7 @@ export function Hero() {
           <div className="bg-accent/10 text-accent font-medium py-1 px-4 rounded-full mb-4 inline-block font-headline">
             {t('hero.availability')}
           </div>
-          <h1 className="font-headline text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-primary leading-tight animate-glow">
+          <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-primary leading-tight animate-glow">
             {t('about.introduction')}{' '}
             <span className="text-accent animate-glow-accent">{t('about.name')}</span>
           </h1>
