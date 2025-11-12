@@ -1,6 +1,6 @@
 import type { Project, Skill } from './types';
 import { Database, FileCode, Server, BotMessageSquare, Link as LinkIcon, Github, Linkedin, Mail } from 'lucide-react';
-import { ReactIcon, ReduxIcon } from '@/components/icons';
+import { ReactIcon, ReduxIcon, WhatsappIcon } from '@/components/icons';
 import { placeholderImages } from './placeholder-images.json';
 
 const getImage = (id: string) => {
@@ -110,4 +110,5 @@ export const socialLinks = [
     { name: 'GitHub', href: 'https://github.com/santiagomartinez12', icon: Github },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/santiago-mart%C3%ADnez-ayala-42790823a/', icon: Linkedin },
     { name: 'Email', href: 'mailto:santiago.martinez1537@gmail.com', icon: Mail },
+    { name: 'WhatsApp', href: 'https://wa.me/573043990600', icon: WhatsappIcon },
 ];

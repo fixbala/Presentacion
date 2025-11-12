@@ -1,11 +1,14 @@
 'use client';
 import { socialLinks } from '@/lib/data';
 import { Card, CardContent } from '../ui/card';
-import { Mail, Phone, Download } from 'lucide-react';
+import { Mail, Phone, Download, Github, Linkedin } from 'lucide-react';
 import { Button } from '../ui/button';
+import { WhatsappIcon } from '../icons';
 
 export function Contact() {
   const email = socialLinks.find(link => link.name === 'Email');
+  const github = socialLinks.find(link => link.name === 'GitHub');
+  const linkedin = socialLinks.find(link => link.name === 'LinkedIn');
 
   return (
     <section id="contact" className="bg-secondary py-20 sm:py-32">
@@ -29,19 +32,33 @@ export function Contact() {
                   </span>
                 </a>
               )}
-              <div className="group flex items-center gap-4 p-3 rounded-lg transition-colors hover:bg-primary/5">
-                <Phone className="w-6 h-6 text-accent transition-transform group-hover:scale-110" />
+              <a href="https://wa.me/573043990600" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 p-3 rounded-lg transition-colors hover:bg-primary/5">
+                <WhatsappIcon className="w-6 h-6 text-accent transition-transform group-hover:scale-110" />
                 <span className="text-lg text-foreground/90 group-hover:text-primary group-hover:font-medium">(+57) 3043990600</span>
-              </div>
+              </a>
               
               <div className="flex justify-center gap-4 pt-4 border-t border-border">
-                {socialLinks.map((link) => (
-                  <Button key={link.name} variant="outline" size="icon" asChild className="transform transition-transform hover:scale-110 hover:bg-accent/10">
-                    <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.name}>
-                      <link.icon className="h-5 w-5 text-foreground/80 group-hover:text-accent" />
+                {github && (
+                  <Button variant="outline" size="icon" asChild className="transform transition-transform hover:scale-110 hover:bg-accent/10">
+                    <a href={github.href} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                      <Github className="h-5 w-5 text-foreground/80 group-hover:text-accent" />
                     </a>
                   </Button>
-                ))}
+                )}
+                 {linkedin && (
+                  <Button variant="outline" size="icon" asChild className="transform transition-transform hover:scale-110 hover:bg-accent/10">
+                    <a href={linkedin.href} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <Linkedin className="h-5 w-5 text-foreground/80 group-hover:text-accent" />
+                    </a>
+                  </Button>
+                )}
+                {email && (
+                  <Button variant="outline" size="icon" asChild className="transform transition-transform hover:scale-110 hover:bg-accent/10">
+                    <a href={email.href} aria-label="Email">
+                      <Mail className="h-5 w-5 text-foreground/80 group-hover:text-accent" />
+                    </a>
+                  </Button>
+                )}
               </div>
 
                <Button asChild size="lg" className="w-full transition-transform hover:scale-105">
