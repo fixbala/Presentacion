@@ -1,11 +1,14 @@
+'use client';
 import { experiences } from "@/lib/data";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { Briefcase } from "lucide-react";
+import { useTranslation } from "@/context/language-context";
 
 export function ExperienceTimeline() {
+    const { t } = useTranslation();
     return (
         <div className="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:bg-border/70">
-            {experiences.map((exp, index) => (
+            {t('experiences', { returnObjects: true }).map((exp: any, index: number) => (
                 <div key={index} className="relative flex items-start gap-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full border border-primary bg-primary/10">
                         <Briefcase className="h-5 w-5 text-primary" />

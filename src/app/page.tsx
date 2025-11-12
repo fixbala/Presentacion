@@ -1,3 +1,4 @@
+'use client';
 import { About } from '@/components/landing/about';
 import { Contact } from '@/components/landing/contact';
 import { Hero } from '@/components/landing/hero';

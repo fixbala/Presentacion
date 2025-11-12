@@ -30,3 +30,7 @@ export type Experience = {
     period: string;
     description: string;
 };
+
+export type Translation = {
+  [key: string]: any;
+};

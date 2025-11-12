@@ -1,9 +1,11 @@
+'use client';
 import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import type { Project } from '@/lib/types';
 import { ArrowUpRight } from 'lucide-react';
+import { useTranslation } from '@/context/language-context';
 
 interface ProjectCardProps {
   project: Project;
@@ -12,6 +14,8 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, highlighted = false, reason }: ProjectCardProps) {
+  const { t } = useTranslation();
+
   return (
     <Card className={`flex flex-col h-full transition-all duration-300 ${highlighted ? 'border-accent shadow-lg ring-2 ring-accent' : 'hover:shadow-xl hover:-translate-y-1'}`}>
       {reason && (
@@ -43,7 +47,7 @@ export function ProjectCard({ project, highlighted = false, reason }: ProjectCar
       <CardFooter>
         <Button variant="outline" asChild className="w-full">
           <a href={project.link} target="_blank" rel="noopener noreferrer">
-            Ver en GitHub
+            {t('projects.view_on_github')}
             <ArrowUpRight className="ml-2 h-4 w-4" />
           </a>
         </Button>

@@ -1,12 +1,13 @@
 'use server';
 import { run } from 'genkit';
 import { recommendProjectsFlow } from '@/ai/flows/recommendProjects';
-import { projects } from '@/lib/data';
 import { z } from 'zod';
+import { translations } from '@/lib/locales';
 
 // AI Recommendation Action
 const recommendationSchema = z.object({
   objective: z.string().min(10, "Por favor, describe lo que buscas con más detalle."),
+  language: z.string().optional(),
 });
 
 type RecommendationState = {
@@ -21,8 +22,12 @@ export async function getProjectRecommendations(
   prevState: RecommendationState,
   formData: FormData
 ): Promise<RecommendationState> {
+
+  const lang = formData.get('language') === 'en' ? 'en' : 'es';
+
   const validatedFields = recommendationSchema.safeParse({
     objective: formData.get('objective'),
+    language: lang,
   });
 
   if (!validatedFields.success) {
@@ -32,16 +37,19 @@ export async function getProjectRecommendations(
     };
   }
 
+  const projects = translations[lang].projects.items;
+
   try {
     const result = await run(recommendProjectsFlow, {
       objective: validatedFields.data.objective,
-      projects: projects.map(({ id, title, description, longDescription, technologies }) => ({
+      projects: projects.map(({ id, title, description, longDescription, technologies }: any) => ({
         id,
         title,
         description,
         longDescription,
         technologies,
       })),
+      language: lang,
     });
 
     return {

@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import Autoplay from 'embla-carousel-autoplay';
-import { projects } from '@/lib/data';
 import { ProjectCard } from './project-card';
 import {
   Carousel,
@@ -11,21 +10,26 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { useTranslation } from '@/context/language-context';
+import type { Project } from '@/lib/types';
 
 export function Projects() {
   const plugin = React.useRef(
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
+  const { t } = useTranslation();
+
+  const projects: Project[] = t('projects.items', { returnObjects: true });
 
   return (
     <section id="projects" className="py-20 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary text-glow-primary">
-            Mis Proyectos
+            {t('projects.title_section')}
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-            Aquí hay una selección de proyectos en los que he trabajado.
+            {t('projects.description')}
           </p>
         </div>
         <div className="mt-12">

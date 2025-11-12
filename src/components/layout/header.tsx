@@ -7,10 +7,13 @@ import { Button } from '@/components/ui/button';
 import { about, navigation } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from '../theme-toggle';
+import { LanguageToggle } from '../language-toggle';
+import { useTranslation } from '@/context/language-context';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,11 +33,11 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="text-2xl font-headline font-bold text-primary hover:text-accent transition-colors text-glow-primary">
-            {about.name}
+            {t('about.name')}
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6">
-            {navigation.map((item) => (
+            {t('navigation', { returnObjects: true }).map((item: {name: string, href: string}) => (
               <a
                 key={item.name}
                 href={item.href}
@@ -44,10 +47,12 @@ export function Header() {
               </a>
             ))}
             <ThemeToggle />
+            <LanguageToggle />
           </nav>
 
           <div className="flex items-center gap-2 md:hidden">
             <ThemeToggle />
+            <LanguageToggle />
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
               <Menu className="h-6 w-6" />
               <span className="sr-only">Open menu</span>
@@ -76,7 +81,7 @@ export function Header() {
             </Button>
           </div>
           <nav className="mt-8 flex flex-col space-y-4">
-            {navigation.map((item) => (
+            {t('navigation', { returnObjects: true }).map((item: {name: string, href: string}) => (
               <a
                 key={item.name}
                 href={item.href}

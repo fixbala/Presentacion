@@ -1,29 +1,9 @@
 import type { Project, Skill, Certification, Experience } from './types';
 import { Database, FileCode, Server, BotMessageSquare, Link as LinkIcon, Github, Linkedin, Mail, GraduationCap, Monitor, Cloud } from 'lucide-react';
 import { ReactIcon, ReduxIcon, WhatsappIcon } from '@/components/icons';
-import { placeholderImages as allPlaceholderImages } from './placeholder-images.json';
 
-const placeholderImages = allPlaceholderImages;
-
-const getImage = (id: string) => {
-    const image = placeholderImages.find((img) => img.id === id);
-    if (!image) {
-      return {
-        src: 'https://picsum.photos/seed/placeholder/600/400',
-        width: 600,
-        height: 400,
-        alt: 'Placeholder Image',
-        hint: 'abstract',
-      };
-    }
-    return {
-        src: image.imageUrl,
-        width: image.width,
-        height: image.height,
-        alt: image.description,
-        hint: image.imageHint,
-    };
-  };
+// This file is now deprecated in favor of locale files in src/lib/locales
+// It is kept for structure reference but the content is not used directly.
 
 export const about = {
   name: 'Santiago Martínez Ayala',
@@ -101,62 +81,7 @@ export const certifications: Certification[] = [
     },
 ];
 
-export const projects: Project[] = [
-    {
-      id: 'p1',
-      title: 'Chatbot de Soporte al Cliente',
-      description: 'Un chatbot inteligente para resolver consultas frecuentes y mejorar la eficiencia del soporte.',
-      longDescription: 'Desarrollo de un chatbot inteligente para soporte al cliente, capaz de resolver consultas frecuentes y escalar a agentes humanos cuando es necesario, mejorando la eficiencia del soporte en un 50%.',
-      technologies: ['Python', 'Dialogflow', 'Flask', 'Docker'],
-      link: 'https://github.com/santiagomartinez12',
-      image: getImage('project-chatbot'),
-    },
-    {
-      id: 'p2',
-      title: 'Plataforma de E-commerce con Múltiples Vendedores',
-      description: 'Una plataforma de e-commerce multi-vendedor con pasarela de pagos integrada y optimizada.',
-      longDescription: 'Creación de una plataforma de e-commerce multi-vendedor con pasarela de pagos integrada, optimizada para un alto rendimiento y seguridad.',
-      technologies: ['Angular', 'Spring Boot', 'MySQL', 'Stripe'],
-      link: 'https://github.com/santiagomartinez12',
-      image: getImage('project-ecommerce'),
-    },
-    {
-      id: 'p3',
-      title: 'Automatización de Procesos de Back-Office',
-      description: 'Implementación de bots para automatizar tareas de back-office, reduciendo tiempos y errores.',
-      longDescription: 'Implementación de bots para automatizar tareas de back-office, reduciendo el tiempo de procesamiento en un 75% y minimizando errores humanos.',
-      technologies: ['Python', 'RPA', 'AWS Lambda'],
-      link: 'https://github.com/santiagomartinez12',
-      image: getImage('project-automation'),
-    },
-    {
-      id: 'p4',
-      title: 'Dashboard de Análisis de Datos en Tiempo Real',
-      description: 'Un dashboard interactivo para la visualización y monitoreo de datos en tiempo real.',
-      longDescription: 'Este proyecto consistió en el desarrollo de un dashboard interactivo que permite la visualización y monitoreo de flujos de datos en tiempo real. Utilizando WebSockets para una comunicación bidireccional eficiente, la aplicación está respaldada por una infraestructura robusta con Spring Boot y Kafka, lo que garantiza un procesamiento de eventos de alto rendimiento y baja latencia. La interfaz, desarrollada en Angular, ofrece una experiencia de usuario fluida y responsiva.',
-      technologies: ['Angular', 'Spring Boot', 'WebSocket', 'Kafka'],
-      link: 'https://github.com/santiagomartinez12',
-      image: getImage('project-dashboard'),
-    },
-    {
-      id: 'p5',
-      title: 'Sistema de Autenticación y Autorización',
-      description: 'Una solución de seguridad integral basada en roles para aplicaciones empresariales.',
-      longDescription: 'Implementación de un sistema de seguridad completo para una aplicación empresarial. Se utilizó Spring Security para gestionar la autenticación y autorización basada en roles, protegiendo los recursos de la aplicación de accesos no autorizados. La solución integra estándares como OAuth 2.0 y JSON Web Tokens (JWT) para asegurar las comunicaciones y el acceso a las APIs.',
-      technologies: ['Spring Security', 'OAuth 2.0', 'JWT', 'PostgreSQL'],
-      link: 'https://github.com/santiagomartinez12',
-      image: getImage('project-auth'),
-    },
-    {
-      id: 'p6',
-      title: 'API Gateway para Arquitectura de Microservicios',
-      description: 'Un punto de entrada centralizado para gestionar una arquitectura de microservicios.',
-      longDescription: 'Desarrollo de un API Gateway que actúa como punto de entrada único para una arquitectura de microservicios. Este componente centraliza el enrutamiento de solicitudes, la autenticación y el monitoreo de los diferentes servicios, simplificando la comunicación y mejorando la seguridad y escalabilidad del sistema. Se implementó utilizando Spring Cloud Gateway y se integró con Netflix Eureka para el descubrimiento de servicios.',
-      technologies: ['Spring Cloud Gateway', 'Netflix Eureka', 'Docker'],
-      link: 'https://github.com/santiagomartinez12',
-      image: getImage('project-gateway'),
-    },
-  ];
+export const projects: Project[] = []; // Deprecated, moved to locales
 
 export const navigation = [
     { name: 'Sobre mi', href: '#about' },

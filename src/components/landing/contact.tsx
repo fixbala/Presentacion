@@ -4,8 +4,10 @@ import { Card, CardContent } from '../ui/card';
 import { Mail, Phone, Download, Github, Linkedin } from 'lucide-react';
 import { Button } from '../ui/button';
 import { WhatsappIcon } from '../icons';
+import { useTranslation } from '@/context/language-context';
 
 export function Contact() {
+  const { t } = useTranslation();
   const email = socialLinks.find(link => link.name === 'Email');
   const github = socialLinks.find(link => link.name === 'GitHub');
   const linkedin = socialLinks.find(link => link.name === 'LinkedIn');
@@ -16,10 +18,10 @@ export function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary text-glow-primary">
-            Contacto
+            {t('contact.title_section')}
           </h2>
           <p className="mt-4 text-lg text-foreground/80">
-            Ponte en contacto conmigo a través de los siguientes medios.
+            {t('contact.description')}
           </p>
         </div>
         <Card className="max-w-md mx-auto mt-12 p-6 md:p-8 transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
@@ -74,7 +76,7 @@ export function Contact() {
                <Button asChild size="lg" className="w-full transition-transform hover:scale-105">
                 <a href="/santiago-martinez-cv.pdf" download>
                   <Download className="mr-2 h-5 w-5" />
-                  Descargar CV
+                  {t('contact.download_cv')}
                 </a>
               </Button>
             </div>

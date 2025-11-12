@@ -1,0 +1,164 @@
+{
+  "about": {
+    "name": "Santiago Martínez Ayala",
+    "title": "Desarrollador de Software",
+    "introduction": "Hola, soy",
+    "description": "Ingeniero de Sistemas y Computación con sólida experiencia en desarrollo backend y frontend, especializado en la creación de soluciones escalables, eficientes y seguras. Experto en el diseño e implementación de microservicios, APIs RESTful y sistemas distribuidos utilizando tecnologías como Java, Go, Spring Boot, Python, SQL y Angular. Apasionado por la tecnología, me mantengo actualizado en las últimas tendencias de desarrollo de software, incluyendo frameworks modernos de frontend y prácticas de programación de alto rendimiento. Mi enfoque está en garantizar la calidad, la robustez y la fiabilidad en cada solución desarrollada, siempre alineado con los objetivos estratégicos de la organización.",
+    "image_alt": "Retrato profesional de Santiago Martínez Ayala.",
+    "title_section": "Sobre Mí"
+  },
+  "experiences": [
+    {
+      "company": "SC SOLUTIONS",
+      "role": "Ingeniero de Sistemas",
+      "period": "Octubre 2024 - Actualidad",
+      "description": "Instalacion y manejo de infraestrucutra TI. Brindar soporte y transferencia de conocimiento al personal en el uso de aplicaciones y herramientas tecnológicas."
+    },
+    {
+      "company": "LOGOSOFT SOLUTIONS S.A.",
+      "role": "Desarrollador de Software",
+      "period": "Abril 2024 - Octubre 2024",
+      "description": "Desarrollé y mantuve software crítico para transacciones bancarias. Levanté requerimientos para la integración de nuevas funciones transaccionales. Gestioné y administré plataformas transaccionales con alta disponibilidad."
+    },
+    {
+      "company": "CULTIVARTECH",
+      "role": "Desarrollador Backend",
+      "period": "Enero 2023 - Abril 2024",
+      "description": "Desarrollé y optimicé la estructura del backend, levanté y documenté requerimientos funcionales, asegurando el cumplimiento de los objetivos del proyecto. Implementé microservicios escalables y desarrollé la estructura del frontend con Angular."
+    }
+  ],
+  "skills": {
+    "title_section": "Habilidades y Tecnologías",
+    "description": "Mi conjunto de herramientas técnicas para construir soluciones robustas y escalables.",
+    "categories": [
+      {
+        "title": "Backend",
+        "technologies": ["Java", "Spring Boot", "Python", "Go", "Node.js", "Microservicios", "RESTful APIs"]
+      },
+      {
+        "title": "Frontend",
+        "technologies": ["Angular", "HTML5", "CSS3", "JavaScript", "TypeScript"]
+      },
+      {
+        "title": "Bases de Datos",
+        "technologies": ["MySQL", "PostgreSQL", "MongoDB", "SQL Server"]
+      },
+      {
+        "title": "Cloud & DevOps",
+        "technologies": ["AWS", "Azure", "Docker", "Kubernetes", "Jenkins"]
+      }
+    ]
+  },
+  "certifications": {
+    "title_section": "Certificaciones",
+    "description": "Mi dedicación al aprendizaje continuo se refleja en estas certificaciones.",
+    "items": [
+      {
+        "source": "UDEMY",
+        "courses": [
+          "Spring Framework y Spring Boot",
+          "Base de Datos MySQL Server",
+          "C# y SQL Server",
+          "C# y Microsoft SQL Server",
+          "Universidad Angular"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title_section": "Mis Proyectos",
+    "description": "Aquí hay una selección de proyectos en los que he trabajado.",
+    "view_on_github": "Ver en GitHub",
+    "items": [
+      {
+        "id": "p1",
+        "title": "Chatbot de Soporte al Cliente",
+        "description": "Un chatbot inteligente para resolver consultas frecuentes y mejorar la eficiencia del soporte.",
+        "longDescription": "Desarrollo de un chatbot inteligente para soporte al cliente, capaz de resolver consultas frecuentes y escalar a agentes humanos cuando es necesario, mejorando la eficiencia del soporte en un 50%.",
+        "technologies": ["Python", "Dialogflow", "Flask", "Docker"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1620429948700-24e48a41d5aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb2JvdCUyMGNoYXR8ZW58MHx8fHwxNzYyOTYxNTMyfDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Chatbot de Soporte al Cliente", "hint": "robot chat" }
+      },
+      {
+        "id": "p2",
+        "title": "Plataforma de E-commerce con Múltiples Vendedores",
+        "description": "Una plataforma de e-commerce multi-vendedor con pasarela de pagos integrada y optimizada.",
+        "longDescription": "Creación de una plataforma de e-commerce multi-vendedor con pasarela de pagos integrada, optimizada para un alto rendimiento y seguridad.",
+        "technologies": ["Angular", "Spring Boot", "MySQL", "Stripe"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1674027392887-751d6396b710?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzdG9yZXxlbnwwfHx8fDE3NjI5MzkyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Plataforma de E-commerce con Múltiples Vendedores", "hint": "online store" }
+      },
+      {
+        "id": "p3",
+        "title": "Automatización de Procesos de Back-Office",
+        "description": "Implementación de bots para automatizar tareas de back-office, reduciendo tiempos y errores.",
+        "longDescription": "Implementación de bots para automatizar tareas de back-office, reduciendo el tiempo de procesamiento en un 75% y minimizando errores humanos.",
+        "technologies": ["Python", "RPA", "AWS Lambda"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1736488679013-38f65b0ae82c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9jZXNzJTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3NjI5NjIyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Automatización de Procesos de Back-Office", "hint": "process automation" }
+      },
+      {
+        "id": "p4",
+        "title": "Dashboard de Análisis de Datos en Tiempo Real",
+        "description": "Un dashboard interactivo para la visualización y monitoreo de datos en tiempo real.",
+        "longDescription": "Este proyecto consistió en el desarrollo de un dashboard interactivo que permite la visualización y monitoreo de flujos de datos en tiempo real. Utilizando WebSockets para una comunicación bidireccional eficiente, la aplicación está respaldada por una infraestructura robusta con Spring Boot y Kafka, lo que garantiza un procesamiento de eventos de alto rendimiento y baja latencia. La interfaz, desarrollada en Angular, ofrece una experiencia de usuario fluida y responsiva.",
+        "technologies": ["Angular", "Spring Boot", "WebSocket", "Kafka"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1625535069654-cfeb8f829088?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGF0YSUyMGNvZGV8ZW58MHx8fHwxNzYyOTE4NjUzfDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Dashboard de Análisis de Datos en Tiempo Real", "hint": "data code" }
+      },
+      {
+        "id": "p5",
+        "title": "Sistema de Autenticación y Autorización",
+        "description": "Una solución de seguridad integral basada en roles para aplicaciones empresariales.",
+        "longDescription": "Implementación de un sistema de seguridad completo para una aplicación empresarial. Se utilizó Spring Security para gestionar la autenticación y autorización basada en roles, protegiendo los recursos de la aplicación de accesos no autorizados. La solución integra estándares como OAuth 2.0 y JSON Web Tokens (JWT) para asegurar las comunicaciones y el acceso a las APIs.",
+        "technologies": ["Spring Security", "OAuth 2.0", "JWT", "PostgreSQL"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1639503547276-90230c4a4198?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzZWN1cml0eSUyMGxvZ2lufGVufDB8fHx8MTc2MjkxMTY3NHww&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Sistema de Autenticación y Autorización", "hint": "security login" }
+      },
+      {
+        "id": "p6",
+        "title": "API Gateway para Arquitectura de Microservicios",
+        "description": "Un punto de entrada centralizado para gestionar una arquitectura de microservicios.",
+        "longDescription": "Desarrollo de un API Gateway que actúa como punto de entrada único para una arquitectura de microservicios. Este componente centraliza el enrutamiento de solicitudes, la autenticación y el monitoreo de los diferentes servicios, simplificando la comunicación y mejorando la seguridad y escalabilidad del sistema. Se implementó utilizando Spring Cloud Gateway y se integró con Netflix Eureka para el descubrimiento de servicios.",
+        "technologies": ["Spring Cloud Gateway", "Netflix Eureka", "Docker"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1628573413574-2b35620de9d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbG91ZCUyMG5ldHdvcmt8ZW58MHx8fHwxNzYyOTM0MzA5fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "API Gateway para Arquitectura de Microservicios", "hint": "cloud network" }
+      }
+    ]
+  },
+  "navigation": [
+    { "name": "Sobre mi", "href": "#about" },
+    { "name": "Experiencia", "href": "#experience" },
+    { "name": "Habilidades", "href": "#skills" },
+    { "name": "Proyectos", "href": "#projects" },
+    { "name": "Certificaciones", "href": "#certifications" },
+    { "name": "Recomendador AI", "href": "#recommendation" },
+    { "name": "Contacto", "href": "#contact" }
+  ],
+  "contact": {
+    "title_section": "Contacto",
+    "description": "Ponte en contacto conmigo a través de los siguientes medios.",
+    "download_cv": "Descargar CV"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "hero": {
+    "availability": "Disponible para trabajar",
+    "description": "Un apasionado Desarrollador de Software con experiencia en la creación de aplicaciones web modernas y funcionales.",
+    "contact_button": "Contáctame",
+    "projects_button": "Ver Proyectos"
+  },
+  "experience": {
+    "title_section": "Experiencia Profesional"
+  },
+  "recommendation": {
+    "title_section": "Recomendador de Proyectos con IA",
+    "description": "¿No estás seguro de qué proyecto ver? Describe lo que buscas (por ejemplo, 'un proyecto con un backend robusto' o 'una app con una gran UI') y la IA te sugerirá los más relevantes.",
+    "form_label": "Tu objetivo",
+    "form_placeholder": "Ej: Busco un desarrollador con experiencia en React y manejo de APIs externas...",
+    "button_cta": "Obtener Recomendación",
+    "button_pending": "Analizando...",
+    "results_title": "Proyectos Recomendados para ti"
+  }
+}

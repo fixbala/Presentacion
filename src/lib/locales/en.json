@@ -1,0 +1,164 @@
+{
+  "about": {
+    "name": "Santiago Martínez Ayala",
+    "title": "Software Developer",
+    "introduction": "Hello, I'm",
+    "description": "Systems and Computer Engineer with solid experience in backend and frontend development, specializing in creating scalable, efficient, and secure solutions. Expert in the design and implementation of microservices, RESTful APIs, and distributed systems using technologies like Java, Go, Spring Boot, Python, SQL, and Angular. Passionate about technology, I stay updated on the latest software development trends, including modern frontend frameworks and high-performance programming practices. My focus is on ensuring quality, robustness, and reliability in every solution developed, always aligned with the strategic objectives of the organization.",
+    "image_alt": "Professional portrait of Santiago Martínez Ayala.",
+    "title_section": "About Me"
+  },
+  "experiences": [
+    {
+      "company": "SC SOLUTIONS",
+      "role": "Systems Engineer",
+      "period": "October 2024 - Present",
+      "description": "Installation and management of IT infrastructure. Provide support and knowledge transfer to staff in the use of technological applications and tools."
+    },
+    {
+      "company": "LOGOSOFT SOLUTIONS S.A.",
+      "role": "Software Developer",
+      "period": "April 2024 - October 2024",
+      "description": "Developed and maintained critical software for banking transactions. Gathered requirements for the integration of new transactional functions. Managed and administered high-availability transactional platforms."
+    },
+    {
+      "company": "CULTIVARTECH",
+      "role": "Backend Developer",
+      "period": "January 2023 - April 2024",
+      "description": "Developed and optimized the backend structure, gathered and documented functional requirements, ensuring project objectives were met. Implemented scalable microservices and developed the frontend structure with Angular."
+    }
+  ],
+  "skills": {
+    "title_section": "Skills and Technologies",
+    "description": "My technical toolkit for building robust and scalable solutions.",
+    "categories": [
+      {
+        "title": "Backend",
+        "technologies": ["Java", "Spring Boot", "Python", "Go", "Node.js", "Microservices", "RESTful APIs"]
+      },
+      {
+        "title": "Frontend",
+        "technologies": ["Angular", "HTML5", "CSS3", "JavaScript", "TypeScript"]
+      },
+      {
+        "title": "Databases",
+        "technologies": ["MySQL", "PostgreSQL", "MongoDB", "SQL Server"]
+      },
+      {
+        "title": "Cloud & DevOps",
+        "technologies": ["AWS", "Azure", "Docker", "Kubernetes", "Jenkins"]
+      }
+    ]
+  },
+  "certifications": {
+    "title_section": "Certifications",
+    "description": "My dedication to continuous learning is reflected in these certifications.",
+    "items": [
+      {
+        "source": "UDEMY",
+        "courses": [
+          "Spring Framework and Spring Boot",
+          "MySQL Server Database",
+          "C# and SQL Server",
+          "C# and Microsoft SQL Server",
+          "Angular University"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title_section": "My Projects",
+    "description": "Here is a selection of projects I have worked on.",
+    "view_on_github": "View on GitHub",
+    "items": [
+      {
+        "id": "p1",
+        "title": "Customer Support Chatbot",
+        "description": "An intelligent chatbot to resolve frequent queries and improve support efficiency.",
+        "longDescription": "Development of an intelligent customer support chatbot, capable of resolving frequent queries and escalating to human agents when necessary, improving support efficiency by 50%.",
+        "technologies": ["Python", "Dialogflow", "Flask", "Docker"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1620429948700-24e48a41d5aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb2JvdCUyMGNoYXR8ZW58MHx8fHwxNzYyOTYxNTMyfDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Customer Support Chatbot", "hint": "robot chat" }
+      },
+      {
+        "id": "p2",
+        "title": "Multi-Vendor E-commerce Platform",
+        "description": "A multi-vendor e-commerce platform with an integrated and optimized payment gateway.",
+        "longDescription": "Creation of a multi-vendor e-commerce platform with an integrated payment gateway, optimized for high performance and security.",
+        "technologies": ["Angular", "Spring Boot", "MySQL", "Stripe"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1674027392887-751d6396b710?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzdG9yZXxlbnwwfHx8fDE3NjI5MzkyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Multi-Vendor E-commerce Platform", "hint": "online store" }
+      },
+      {
+        "id": "p3",
+        "title": "Back-Office Process Automation",
+        "description": "Implementation of bots to automate back-office tasks, reducing time and errors.",
+        "longDescription": "Implementation of bots to automate back-office tasks, reducing processing time by 75% and minimizing human errors.",
+        "technologies": ["Python", "RPA", "AWS Lambda"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1736488679013-38f65b0ae82c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9jZXNzJTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3NjI5NjIyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Back-Office Process Automation", "hint": "process automation" }
+      },
+      {
+        "id": "p4",
+        "title": "Real-Time Data Analysis Dashboard",
+        "description": "An interactive dashboard for real-time data visualization and monitoring.",
+        "longDescription": "This project involved developing an interactive dashboard for real-time data stream visualization and monitoring. Using WebSockets for efficient bidirectional communication, the application is supported by a robust infrastructure with Spring Boot and Kafka, ensuring high-performance, low-latency event processing. The interface, developed in Angular, offers a smooth and responsive user experience.",
+        "technologies": ["Angular", "Spring Boot", "WebSocket", "Kafka"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1625535069654-cfeb8f829088?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGF0YSUyMGNvZGV8ZW58MHx8fHwxNzYyOTE4NjUzfDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Real-Time Data Analysis Dashboard", "hint": "data code" }
+      },
+      {
+        "id": "p5",
+        "title": "Authentication and Authorization System",
+        "description": "A comprehensive role-based security solution for enterprise applications.",
+        "longDescription": "Implementation of a complete security system for an enterprise application. Spring Security was used to manage role-based authentication and authorization, protecting application resources from unauthorized access. The solution integrates standards such as OAuth 2.0 and JSON Web Tokens (JWT) to secure communications and API access.",
+        "technologies": ["Spring Security", "OAuth 2.0", "JWT", "PostgreSQL"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1639503547276-90230c4a4198?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzZWN1cml0eSUyMGxvZ2lufGVufDB8fHx8MTc2MjkxMTY3NHww&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "Authentication and Authorization System", "hint": "security login" }
+      },
+      {
+        "id": "p6",
+        "title": "API Gateway for Microservices Architecture",
+        "description": "A centralized entry point to manage a microservices architecture.",
+        "longDescription": "Development of an API Gateway that acts as a single entry point for a microservices architecture. This central component handles request routing, authentication, and monitoring of the different services, simplifying communication and improving system security and scalability. It was implemented using Spring Cloud Gateway and integrated with Netflix Eureka for service discovery.",
+        "technologies": ["Spring Cloud Gateway", "Netflix Eureka", "Docker"],
+        "link": "https://github.com/santiagomartinez12",
+        "image": { "src": "https://images.unsplash.com/photo-1628573413574-2b35620de9d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbG91ZCUyMG5ldHdvcmt8ZW58MHx8fHwxNzYyOTM0MzA5fDA&ixlib=rb-4.1.0&q=80&w=1080", "width": 600, "height": 400, "alt": "API Gateway for Microservices", "hint": "cloud network" }
+      }
+    ]
+  },
+  "navigation": [
+    { "name": "About me", "href": "#about" },
+    { "name": "Experience", "href": "#experience" },
+    { "name": "Skills", "href": "#skills" },
+    { "name": "Projects", "href": "#projects" },
+    { "name": "Certifications", "href": "#certifications" },
+    { "name": "AI Recommender", "href": "#recommendation" },
+    { "name": "Contact", "href": "#contact" }
+  ],
+  "contact": {
+    "title_section": "Contact",
+    "description": "Get in touch with me through the following channels.",
+    "download_cv": "Download CV"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "hero": {
+    "availability": "Available for work",
+    "description": "A passionate Software Developer with experience in creating modern and functional web applications.",
+    "contact_button": "Contact Me",
+    "projects_button": "View Projects"
+  },
+  "experience": {
+    "title_section": "Professional Experience"
+  },
+  "recommendation": {
+    "title_section": "AI Project Recommender",
+    "description": "Not sure which project to check out? Describe what you're looking for (e.g., 'a project with a robust backend' or 'an app with a great UI') and the AI will suggest the most relevant ones.",
+    "form_label": "Your objective",
+    "form_placeholder": "e.g., I'm looking for a developer with experience in React and handling external APIs...",
+    "button_cta": "Get Recommendation",
+    "button_pending": "Analyzing...",
+    "results_title": "Recommended Projects for You"
+  }
+}

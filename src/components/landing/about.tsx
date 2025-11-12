@@ -1,10 +1,13 @@
+'use client';
 import Image from 'next/image';
 import { about } from '@/lib/data';
 import { placeholderImages } from '@/lib/placeholder-images.json';
 import { Briefcase } from 'lucide-react';
+import { useTranslation } from '@/context/language-context';
 
 export function About() {
   const profileImage = placeholderImages.find(p => p.id === 'profile-picture');
+  const { t } = useTranslation();
 
   return (
     <section id="about" className="py-20 sm:py-32">
@@ -15,7 +18,7 @@ export function About() {
               {profileImage && (
                 <Image
                   src={profileImage.imageUrl}
-                  alt={profileImage.description}
+                  alt={t('about.image_alt')}
                   width={profileImage.width}
                   height={profileImage.height}
                   className="rounded-lg object-cover shadow-xl rotate-[-3deg] hover:rotate-0 transition-transform duration-300"
@@ -29,10 +32,10 @@ export function About() {
           </div>
           <div className="md:col-span-3">
             <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary text-glow-primary">
-              Sobre Mí
+              {t('about.title_section')}
             </h2>
             <p className="mt-4 text-lg text-foreground/80">
-              {about.description}
+              {t('about.description')}
             </p>
           </div>
         </div>
