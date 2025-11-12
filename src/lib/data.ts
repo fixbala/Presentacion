@@ -33,22 +33,22 @@ export const about = {
 
 export const experiences: Experience[] = [
     {
-        company: 'CultivarTech',
+        company: 'SC SOLUTIONS',
+        role: 'Ingeniero de Sistemas',
+        period: 'Octubre 2024 - Actualidad',
+        description: 'Instalacion y manejo de infraestrucutra TI. Brindar soporte y transferencia de conocimiento al personal en el uso de aplicaciones y herramientas tecnológicas.'
+    },
+    {
+        company: 'LOGOSOFT SOLUTIONS S.A.',
+        role: 'Desarrollador de Software',
+        period: 'Abril 2024 - Octubre 2024',
+        description: 'Desarrollé y mantuve software crítico para transacciones bancarias. Levanté requerimientos para la integración de nuevas funciones transaccionales. Gestioné y administré plataformas transaccionales con alta disponibilidad.'
+    },
+    {
+        company: 'CULTIVARTECH',
         role: 'Desarrollador Backend',
         period: 'Enero 2023 - Abril 2024',
-        description: 'Desarrollé y optimicé la estructura del backend. Levanté y documenté requerimientos funcionales, asegurando el cumplimiento de los objetivos del proyecto. Implementé microservicios escalables. Desarrollo de estructura frontend con angular.'
-    },
-    {
-        company: 'No Country',
-        role: 'FullStack Developer',
-        period: 'Noviembre 2023 - Diciembre 2023',
-        description: 'Participe en la simulación de un proyecto de una aplicación web de un e-commerce donde teniamos que hacerla en un periodo de 3 semanas, en donde desarrolle la parte del Back-end, el Login, la base de datos, los modelos y controladores de los mismos.'
-    },
-    {
-        company: 'Makaia',
-        role: 'Desarrollador Web Trainee',
-        period: 'Junio 2022 - Noviembre 2022',
-        description: 'Participé en un bootcamp intensivo donde desarrollé habilidades en el stack PERN (PostgreSQL, Express, React, Node.js). Creé proyectos prácticos, incluyendo una SPA de videojuegos y una aplicación de recetas de comida, aplicando conocimientos en frontend y backend.'
+        description: 'Desarrollé y optimicé la estructura del backend, levanté y documenté requerimientos funcionales, asegurando el cumplimiento de los objetivos del proyecto. Implementé microservicios escalables y desarrollé la estructura del frontend con Angular.'
     }
 ];
 
