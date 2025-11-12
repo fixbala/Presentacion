@@ -1,5 +1,5 @@
-import type { Project, Skill } from './types';
-import { Database, FileCode, Server, BotMessageSquare, Link as LinkIcon, Github, Linkedin, Mail } from 'lucide-react';
+import type { Project, Skill, Certification } from './types';
+import { Database, FileCode, Server, BotMessageSquare, Link as LinkIcon, Github, Linkedin, Mail, GraduationCap } from 'lucide-react';
 import { ReactIcon, ReduxIcon, WhatsappIcon } from '@/components/icons';
 import { placeholderImages } from './placeholder-images.json';
 
@@ -48,6 +48,23 @@ export const skills: Skill[] = [
   { name: 'Express', icon: Server },
   { name: 'PostgreSQL', icon: Database },
   { name: 'Sequelize', icon: Database },
+];
+
+export const certifications: Certification[] = [
+    {
+      source: 'Henry',
+      courses: ['Full Stack Web Developer'],
+    },
+    {
+      source: 'UDEMY',
+      courses: [
+        'Spring Framework y Spring Boot',
+        'Base de Datos MySQL Server',
+        'C# y SQL Server',
+        'C# y Microsoft SQL Server',
+        'Universidad Angular',
+      ],
+    },
 ];
 
 export const projects: Project[] = [
@@ -102,6 +119,7 @@ export const navigation = [
     { name: 'Sobre mi', href: '#about' },
     { name: 'Habilidades', href: '#skills' },
     { name: 'Proyectos', href: '#projects' },
+    { name: 'Certificaciones', href: '#certifications' },
     { name: 'Recomendador AI', href: '#recommendation' },
     { name: 'Contacto', href: '#contact' },
 ];

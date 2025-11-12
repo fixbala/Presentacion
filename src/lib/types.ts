@@ -18,3 +18,8 @@ export type Skill = {
   name: string;
   icon: React.ComponentType<{ className?: string }>;
 };
+
+export type Certification = {
+    source: string;
+    courses: string[];
+};

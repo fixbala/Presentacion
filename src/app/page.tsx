@@ -7,6 +7,7 @@ import { Footer } from '@/components/layout/footer';
 import { Header } from '@/components/layout/header';
 import { Recommendation } from '@/components/landing/recommendation';
 import { Toaster } from '@/components/ui/toaster';
+import { Certifications } from '@/components/landing/certifications';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <Certifications />
         <Recommendation />
         <Contact />
       </main>
