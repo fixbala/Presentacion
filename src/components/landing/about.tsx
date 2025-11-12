@@ -28,7 +28,7 @@ export function About() {
             </div>
           </div>
           <div className="md:col-span-3">
-            <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary">
+            <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary text-glow-primary">
               Sobre Mí
             </h2>
             <p className="mt-4 text-lg text-foreground/80">

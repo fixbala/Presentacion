@@ -46,8 +46,8 @@ export function Recommendation() {
     <section id="recommendation" className="py-20 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary flex items-center justify-center gap-3">
-            <BotMessageSquare className="w-10 h-10 text-accent" />
+          <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary flex items-center justify-center gap-3 text-glow-primary">
+            <BotMessageSquare className="w-10 h-10 text-accent icon-glow" />
             Recomendador de Proyectos con IA
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
@@ -84,7 +84,7 @@ export function Recommendation() {
         
         {recommendedProjects.length > 0 && (
           <div className="mt-16">
-            <h3 className="font-headline text-2xl sm:text-3xl font-bold text-primary text-center">Proyectos Recomendados para ti</h3>
+            <h3 className="font-headline text-2xl sm:text-3xl font-bold text-primary text-center text-glow-primary">Proyectos Recomendados para ti</h3>
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {recommendedProjects.map((project) => (
                 <ProjectCard

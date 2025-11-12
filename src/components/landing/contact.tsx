@@ -15,7 +15,7 @@ export function Contact() {
     <section id="contact" className="bg-secondary py-20 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary">
+          <h2 className="font-headline text-3xl sm:text-4xl font-bold text-primary text-glow-primary">
             Contacto
           </h2>
           <p className="mt-4 text-lg text-foreground/80">
@@ -27,7 +27,7 @@ export function Contact() {
             <div className="space-y-6">
               {email && (
                 <a href={email.href} className="group flex items-center gap-4 p-3 rounded-lg transition-colors hover:bg-primary/5">
-                  <Mail className="w-6 h-6 text-accent transition-transform group-hover:scale-110" />
+                  <Mail className="w-6 h-6 text-accent transition-transform group-hover:scale-110 icon-glow" />
                   <span className="text-lg text-foreground/90 group-hover:text-primary group-hover:font-medium">
                     {email.href.replace('mailto:', '')}
                   </span>
@@ -35,7 +35,7 @@ export function Contact() {
               )}
               {whatsapp && (
                 <a href={whatsapp.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 p-3 rounded-lg transition-colors hover:bg-primary/5">
-                  <WhatsappIcon className="w-6 h-6 text-accent transition-transform group-hover:scale-110" />
+                  <WhatsappIcon className="w-6 h-6 text-accent transition-transform group-hover:scale-110 icon-glow" />
                   <span className="text-lg text-foreground/90 group-hover:text-primary group-hover:font-medium">(+57) 3043990600</span>
                 </a>
               )}

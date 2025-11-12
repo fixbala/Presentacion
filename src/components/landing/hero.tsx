@@ -10,9 +10,9 @@ export function Hero() {
           <div className="bg-accent/10 text-accent font-medium py-1 px-4 rounded-full mb-4 inline-block font-headline">
             Disponible para trabajar
           </div>
-          <h1 className="font-headline text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-primary leading-tight">
+          <h1 className="font-headline text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-primary leading-tight animate-glow">
             {about.introduction}{' '}
-            <span className="text-accent">{about.name}</span>
+            <span className="text-accent animate-glow-accent">{about.name}</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg sm:text-xl text-foreground/80">
             Un apasionado {about.title} con experiencia en la creación de aplicaciones web modernas y funcionales.
