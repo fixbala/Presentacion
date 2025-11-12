@@ -37,21 +37,13 @@ export function ProjectCard({ project, highlighted = false, reason }: ProjectCar
         <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
       </CardHeader>
-      <CardContent className="flex-grow">
+      <CardContent className="flex-grow flex flex-col justify-end">
         <div className="flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
             <Badge key={tech} variant="secondary">{tech}</Badge>
           ))}
         </div>
       </CardContent>
-      <CardFooter>
-        <Button variant="outline" asChild className="w-full">
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            {t('projects.view_on_github')}
-            <ArrowUpRight className="ml-2 h-4 w-4" />
-          </a>
-        </Button>
-      </CardFooter>
     </Card>
   );
 }
