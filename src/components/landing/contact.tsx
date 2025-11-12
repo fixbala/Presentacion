@@ -18,33 +18,33 @@ export function Contact() {
             Ponte en contacto conmigo a través de los siguientes medios.
           </p>
         </div>
-        <Card className="max-w-md mx-auto mt-12 p-6 md:p-8">
+        <Card className="max-w-md mx-auto mt-12 p-6 md:p-8 transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
           <CardContent className="p-0">
             <div className="space-y-6">
               {email && (
-                <div className="flex items-center gap-4">
-                  <Mail className="w-6 h-6 text-accent" />
-                  <a href={email.href} className="text-lg hover:underline">
+                <a href={email.href} className="group flex items-center gap-4 p-3 rounded-lg transition-colors hover:bg-primary/5">
+                  <Mail className="w-6 h-6 text-accent transition-transform group-hover:scale-110" />
+                  <span className="text-lg text-foreground/90 group-hover:text-primary group-hover:font-medium">
                     {email.href.replace('mailto:', '')}
-                  </a>
-                </div>
+                  </span>
+                </a>
               )}
-              <div className="flex items-center gap-4">
-                <Phone className="w-6 h-6 text-accent" />
-                <span className="text-lg">(+57) 3043990600</span>
+              <div className="group flex items-center gap-4 p-3 rounded-lg transition-colors hover:bg-primary/5">
+                <Phone className="w-6 h-6 text-accent transition-transform group-hover:scale-110" />
+                <span className="text-lg text-foreground/90 group-hover:text-primary group-hover:font-medium">(+57) 3043990600</span>
               </div>
               
               <div className="flex justify-center gap-4 pt-4 border-t border-border">
                 {socialLinks.map((link) => (
-                  <Button key={link.name} variant="outline" size="icon" asChild>
+                  <Button key={link.name} variant="outline" size="icon" asChild className="transform transition-transform hover:scale-110 hover:bg-accent/10">
                     <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.name}>
-                      <link.icon className="h-5 w-5" />
+                      <link.icon className="h-5 w-5 text-foreground/80 group-hover:text-accent" />
                     </a>
                   </Button>
                 ))}
               </div>
 
-               <Button asChild size="lg" className="w-full">
+               <Button asChild size="lg" className="w-full transition-transform hover:scale-105">
                 <a href="/santiago-martinez-cv.pdf" download>
                   <Download className="mr-2 h-5 w-5" />
                   Descargar CV
