@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { about, navigation } from '@/lib/data';
 import { cn } from '@/lib/utils';
+import { ThemeToggle } from '../theme-toggle';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,9 +43,11 @@ export function Header() {
                 {item.name}
               </a>
             ))}
+            <ThemeToggle />
           </nav>
 
-          <div className="md:hidden">
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
               <Menu className="h-6 w-6" />
               <span className="sr-only">Open menu</span>
