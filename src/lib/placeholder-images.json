@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-picture",
+      "description": "A professional portrait of Felipe Bala.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjI4NjA5NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "width": 500,
+      "height": 500,
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "project-videogames",
+      "description": "Placeholder for the Videogames project.",
+      "imageUrl": "https://images.unsplash.com/photo-1707308534034-923adb4fce2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnYW1pbmclMjBhYnN0cmFjdHxlbnwwfHx8fDE3NjI4NzYyOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "width": 600,
+      "height": 400,
+      "imageHint": "gaming abstract"
+    },
+    {
+      "id": "project-food",
+      "description": "Placeholder for the Food App project.",
+      "imageUrl": "https://images.unsplash.com/photo-1520218508822-998633d997e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVsaWNpb3VzJTIwZm9vZHxlbnwwfHx8fDE3NjI4NTA4Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "width": 600,
+      "height": 400,
+      "imageHint": "delicious food"
+    },
+    {
+      "id": "project-pokemon",
+      "description": "Placeholder for the Pokemon project.",
+      "imageUrl": "https://images.unsplash.com/photo-1744057847918-de6698eafc67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9uc3RlciUyMGNhcnRvb258ZW58MHx8fHwxNzYyOTE2NzEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "width": 600,
+      "height": 400,
+      "imageHint": "monster cartoon"
+    },
+    {
+      "id": "project-rick-morty",
+      "description": "Placeholder for the Rick and Morty project.",
+      "imageUrl": "https://images.unsplash.com/photo-1639262498805-17c7dc422d37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2NpZW5jZSUyMGZpY3Rpb258ZW58MHx8fHwxNzYyOTE2NzEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "width": 600,
+      "height": 400,
+      "imageHint": "science fiction"
+    },
+    {
+      "id": "project-weather",
+      "description": "Placeholder for the Weather App project.",
+      "imageUrl": "https://images.unsplash.com/photo-1643757343290-b7073cd9c4a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxza3klMjBjbG91ZHN8ZW58MHx8fHwxNzYyOTEzMTAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "width": 600,
+      "height": 400,
+      "imageHint": "sky clouds"
+    }
+  ]
 }
