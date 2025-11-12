@@ -14,9 +14,9 @@ export function Certifications() {
             Mi dedicación al aprendizaje continuo se refleja en estas certificaciones.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="mt-12 flex justify-center">
           {certifications.map((cert) => (
-            <Card key={cert.source} className="group transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-border/80 hover:border-accent">
+            <Card key={cert.source} className="group w-full max-w-lg transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-border/80 hover:border-accent">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <GraduationCap className="text-accent transition-transform duration-300 group-hover:scale-110" />

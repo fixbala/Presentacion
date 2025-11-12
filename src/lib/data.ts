@@ -52,10 +52,6 @@ export const skills: Skill[] = [
 
 export const certifications: Certification[] = [
     {
-      source: 'Henry',
-      courses: ['Full Stack Web Developer'],
-    },
-    {
       source: 'UDEMY',
       courses: [
         'Spring Framework y Spring Boot',
