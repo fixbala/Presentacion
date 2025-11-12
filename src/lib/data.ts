@@ -24,9 +24,9 @@ const getImage = (id: string) => {
   };
 
 export const about = {
-  name: 'Felipe Bala',
-  title: 'FullStack Developer',
-  introduction: "Hola, Soy Felipe",
+  name: 'Santiago Martínez Ayala',
+  title: 'Desarrollador de Software',
+  introduction: "Hola, Soy Santiago",
   description: `Soy un desarrollador de Software de 25 años, con solidos conocimientos en el desarrollo de aplicaciones web, he trabajado con tecnologias como React, Redux, Node.js, Express, PostgreSQL, Sequelize.
   Soy una persona proactiva, organizado y responsable, con buenas relaciones interpersonales. Siempre tengo la mejor disposición para la realización de mis labores.`,
   experience: {

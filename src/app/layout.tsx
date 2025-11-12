@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Felipe Bala | FullStack Developer',
-  description: 'Portfolio of Felipe Bala, a FullStack Developer specializing in modern web technologies.',
+  title: 'Santiago Martínez Ayala | Desarrollador de Software',
+  description: 'Portfolio of Santiago Martínez Ayala, a Software Developer specializing in modern web technologies.',
 };
 
 export default function RootLayout({
