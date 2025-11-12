@@ -28,7 +28,7 @@ const getImage = (id: string) => {
 export const about = {
   name: 'Santiago Martínez Ayala',
   title: 'Desarrollador de Software',
-  introduction: "Hola, Soy Santiago",
+  introduction: "Hola, soy",
   description: `Ingeniero de Sistemas y Computación con sólida experiencia en desarrollo backend y frontend, especializado en la creación de soluciones escalables, eficientes y seguras. Experto en el diseño e implementación de microservicios, APIs RESTful y sistemas distribuidos utilizando tecnologías como Java, Go, Spring Boot, Python, SQL y Angular. Apasionado por la tecnología, me mantengo actualizado en las últimas tendencias de desarrollo de software, incluyendo frameworks modernos de frontend y prácticas de programación de alto rendimiento. Mi enfoque está en garantizar la calidad, la robustez y la fiabilidad en cada solución desarrollada, siempre alineado con los objetivos estratégicos de la organización.`
 };
 
