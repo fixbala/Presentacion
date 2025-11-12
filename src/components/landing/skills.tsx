@@ -46,7 +46,7 @@ export function Skills() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="flex flex-wrap gap-3 pt-4">
+                    <div className="flex flex-wrap gap-3 pt-4 pb-4">
                       {category.technologies.map((tech: string) => (
                         <Badge key={tech} variant="secondary" className="text-base px-4 py-2 transition-transform hover:scale-105 glow-on-hover-accent">
                           {tech}
