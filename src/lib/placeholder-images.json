@@ -31,6 +31,30 @@
       "width": 600,
       "height": 400,
       "imageHint": "architecture network"
+    },
+    {
+      "id": "project-chatbot",
+      "description": "Placeholder for the Customer Support Chatbot project.",
+      "imageUrl": "https://images.unsplash.com/photo-1516110833944-766d14983a18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "width": 600,
+      "height": 400,
+      "imageHint": "support bot"
+    },
+    {
+      "id": "project-ecommerce",
+      "description": "Placeholder for the Multi-Vendor E-commerce Platform project.",
+      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "width": 600,
+      "height": 400,
+      "imageHint": "online store"
+    },
+    {
+      "id": "project-automation",
+      "description": "Placeholder for the Back-Office Process Automation project.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "width": 600,
+      "height": 400,
+      "imageHint": "process automation"
     }
   ]
 }
