@@ -38,15 +38,16 @@ export function Header() {
             </Link>
           </div>
 
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-1">
             {t('navigation', { returnObjects: true }).map((item: {name: string, href: string}) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="font-medium text-foreground/80 hover:text-accent transition-colors"
-              >
-                {item.name}
-              </a>
+              <Button variant="ghost" asChild key={item.name}>
+                <a
+                  href={item.href}
+                  className="font-medium text-foreground/80 hover:text-accent transition-colors"
+                >
+                  {item.name}
+                </a>
+              </Button>
             ))}
             <ThemeToggle />
             <LanguageToggle />
