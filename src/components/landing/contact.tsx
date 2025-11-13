@@ -67,7 +67,7 @@ export function Contact() {
               </div>
 
                <Button asChild size="lg" className="w-full transition-transform hover:scale-105">
-                <a href="/santiago-martinez-cv.pdf" download>
+                <a href="/CV.pdf" download>
                   <Download className="mr-2 h-5 w-5" />
                   {t('contact.download_cv')}
                 </a>
