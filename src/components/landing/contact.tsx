@@ -57,13 +57,6 @@ export function Contact() {
                     </a>
                   </Button>
                 )}
-                {email && (
-                  <Button variant="outline" size="icon" asChild className="transform transition-transform hover:scale-110 hover:bg-accent/10">
-                    <a href={email.href} aria-label="Email">
-                      <Mail className="h-5 w-5 text-foreground/80 group-hover:text-accent" />
-                    </a>
-                  </Button>
-                )}
                 {whatsapp && (
                     <Button variant="outline" size="icon" asChild className="transform transition-transform hover:scale-110 hover:bg-accent/10">
                         <a href={whatsapp.href} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
