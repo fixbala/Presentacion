@@ -1,12 +1,9 @@
 'use client';
 import Image from 'next/image';
-import { about } from '@/lib/data';
-import { placeholderImages } from '@/lib/placeholder-images.json';
 import { Briefcase } from 'lucide-react';
 import { useTranslation } from '@/context/language-context';
 
 export function About() {
-  const profileImage = placeholderImages.find(p => p.id === 'profile-picture');
   const { t } = useTranslation();
 
   return (
@@ -15,16 +12,13 @@ export function About() {
         <div className="grid md:grid-cols-5 gap-12 items-center">
           <div className="md:col-span-2">
             <div className="relative aspect-square w-full max-w-sm mx-auto">
-              {profileImage && (
                 <Image
-                  src={profileImage.imageUrl}
+                  src="/foto.png"
                   alt={t('about.image_alt')}
-                  width={profileImage.width}
-                  height={profileImage.height}
+                  width={500}
+                  height={500}
                   className="rounded-lg object-cover shadow-xl rotate-[-3deg] hover:rotate-0 transition-transform duration-300"
-                  data-ai-hint={profileImage.imageHint}
                 />
-              )}
                <div className="absolute -bottom-4 -right-4 bg-primary rounded-lg p-4 text-primary-foreground shadow-lg">
                 <Briefcase className="w-8 h-8" />
               </div>
