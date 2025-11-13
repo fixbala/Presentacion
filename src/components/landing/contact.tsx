@@ -1,7 +1,7 @@
 'use client';
 import { socialLinks } from '@/lib/data';
 import { Card, CardContent } from '../ui/card';
-import { Mail, Phone, Download, Github, Linkedin } from 'lucide-react';
+import { Mail, Download, Github, Linkedin } from 'lucide-react';
 import { Button } from '../ui/button';
 import { WhatsappIcon } from '../icons';
 import { useTranslation } from '@/context/language-context';
@@ -67,7 +67,7 @@ export function Contact() {
               </div>
 
                <Button asChild size="lg" className="w-full transition-transform hover:scale-105">
-                <a href="/CV.pdf" download>
+                <a href="/CV.pdf" download="CV.pdf">
                   <Download className="mr-2 h-5 w-5" />
                   {t('contact.download_cv')}
                 </a>
