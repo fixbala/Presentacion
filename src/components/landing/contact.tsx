@@ -31,7 +31,7 @@ export function Contact() {
                 <a href={email.href} className="group flex items-center gap-4 p-3 rounded-lg transition-colors hover:bg-primary/5">
                   <Mail className="w-6 h-6 text-accent transition-transform group-hover:scale-110 icon-glow" />
                   <span className="text-lg text-foreground/90 group-hover:text-primary group-hover:font-medium">
-                    {email.href.replace('mailto:', '')}
+                    ipfixbala@gmail.com
                   </span>
                 </a>
               )}

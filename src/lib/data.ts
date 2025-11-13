@@ -94,8 +94,8 @@ export const navigation = [
 ];
 
 export const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com/santiagomartinez12', icon: Github },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/santiago-mart%C3%ADnez-ayala-42790823a/', icon: Linkedin },
-    { name: 'Email', href: 'mailto:santiago.martinez1537@gmail.com', icon: Mail },
+    { name: 'GitHub', href: 'https://github.com/fixbala', icon: Github },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/santiago-martinez-ayala/', icon: Linkedin },
+    { name: 'Email', href: 'mailto:ipfixbala@gmail.com', icon: Mail },
     { name: 'WhatsApp', href: 'https://wa.me/573043990600', icon: WhatsappIcon },
 ];
