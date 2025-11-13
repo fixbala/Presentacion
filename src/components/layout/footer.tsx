@@ -15,7 +15,7 @@ export function Footer() {
             <p className="text-muted-foreground text-sm">© {new Date().getFullYear()} {t('footer.rights')}</p>
           </div>
           <div className="flex items-center gap-2">
-            {socialLinks.map((link) => (
+            {socialLinks.filter(link => link.name !== 'Email').map((link) => (
               <Button key={link.name} variant="ghost" size="icon" asChild>
                 <a href={link.href} target="_blank" rel="noopener noreferrer">
                   <link.icon className="h-5 w-5 text-foreground/70 hover:text-accent transition-colors" />
