@@ -1,14 +1,19 @@
-import type {NextConfig} from 'next';
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+/** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === 'production';
+
+const nextConfig = {
+  // Configure the project for static export
+  output: 'export',
+
+  // Set the base path and asset prefix for GitHub Pages
+  basePath: isProd ? '/Presentacion' : '',
+  assetPrefix: isProd ? '/Presentacion/' : '',
+
+  // Disable Next.js image optimization, which is not compatible with static export
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -23,13 +28,20 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https' ,
         hostname: 'picsum.photos',
         port: '',
         pathname: '/**',
       },
     ],
   },
+
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
